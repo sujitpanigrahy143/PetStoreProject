@@ -3,6 +3,7 @@
   <groupId>PetStoreProject</groupId>
   <artifactId>PetStoreProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
   <dependencies>
 	  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
@@ -77,4 +78,17 @@
 
 
   </dependencies>
+	<build>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <version>3.8.1</version> <!-- Use a newer version -->
+	            <configuration>
+	                <source>11</source> <!-- Set Java version -->
+	                <target>11</target>
+	            </configuration>
+	        </plugin>
+	    </plugins>
+	</build>
 </project>
